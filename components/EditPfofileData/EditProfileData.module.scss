@@ -1,0 +1,67 @@
+.container {
+  height: auto;
+  width: 1308px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 26px;
+    margin-bottom: 55px;
+    padding: 0;
+    .name, .email, .phoneNumber {
+      height: 97px;
+      width: 436px;
+      //border: 1px solid deeppink;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .name {
+
+    }
+    .email {
+      border-right: 1px solid #CAE7FE;
+      border-left: 1px solid #CAE7FE;
+    }
+    .phoneNumber {
+
+    }
+  }
+
+  .boxBtn {
+    padding-bottom: 44px;
+  }
+
+
+}
+
+.modal_save_data {
+  padding: 24px;
+  position: absolute;
+  width: 600px;
+  height: 318px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .btn_close {
+    position: absolute;
+    color: #828282;
+    right: 24px;
+    top: 24px;
+  }
+  span {
+    color: #828282;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+}

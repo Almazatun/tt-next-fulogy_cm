@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    box-sizing: border-box;
+    position: relative;
+    .lineHorizontal {
+        position: absolute;
+        height: 96px;
+        width: 1308px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom: 1px solid #CAE7FE;
+        z-index: 0;
+        flex-grow: 1;
+    }
+    .mail, .phone {
+        margin: 0 74px;
+        height: 96px;
+        align-items: center;
+        display: flex;
+    }
+}
