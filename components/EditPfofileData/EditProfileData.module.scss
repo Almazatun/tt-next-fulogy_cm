@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   .box {
     display: flex;
     flex-direction: row;
@@ -11,6 +12,7 @@
     margin-top: 26px;
     margin-bottom: 55px;
     padding: 0;
+
     .name, .email, .phoneNumber {
       height: 97px;
       width: 436px;
@@ -19,15 +21,33 @@
       flex-direction: row;
       align-items: center;
       justify-content: center;
+
+      .name_icon, .email_icon, .phoneNumber_icon {
+        margin: 0 45px 0 0;
+        color: #00BFA5
+      }
+
+      .input {
+        margin: 8px;
+        width: 254px;
+        font-size: 14px;
+
+        ::placeholder {
+          font-size: 14px;
+          color: rgba(49, 49, 49, 0.5);
+        }
+      }
     }
 
     .name {
 
     }
+
     .email {
       border-right: 1px solid #CAE7FE;
       border-left: 1px solid #CAE7FE;
     }
+
     .phoneNumber {
 
     }
@@ -51,12 +71,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  top: 28%;
+  left: 30%;
+
   .btn_close {
     position: absolute;
     color: #828282;
     right: 24px;
     top: 24px;
   }
+
   span {
     color: #828282;
     font-family: "Open Sans", sans-serif;
@@ -64,4 +88,98 @@
     font-weight: 600;
   }
 
+}
+
+.modal_success {
+  padding: 24px;
+  position: absolute;
+  width: 600px;
+  height: 318px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 28%;
+  left: 30%;
+
+  .modal_success_box {
+    margin: 32px 0 28px 0;
+
+  }
+
+  .btn_close {
+    position: absolute;
+    color: #828282;
+    right: 24px;
+    top: 24px;
+  }
+
+
+  span {
+    color: #828282;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: auto;
+
+    .box {
+      font-size: 14px;
+      flex-direction: column;
+      margin-bottom: 6px;
+
+      .name, .email, .phoneNumber {
+        height: 86px;
+        width: 254px;
+        border: none;
+
+        .name_icon, .email_icon, .phoneNumber_icon {
+          display: none;
+        }
+
+      }
+    }
+
+    .boxBtn {
+      padding-bottom: 5px;
+    }
+
+  }
+
+  .modal_save_data {
+    width: 100%;
+    height: 70%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    top: unset;
+  }
+  .modal_success {
+    width: 100%;
+    height: 20%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: unset;
+    padding: 0;
+    .modal_success_box {
+      margin: 0 0 0 0;
+      padding: 0;
+      .modal_success_btn {
+        display: none;
+      }
+    }
+
+    span {
+      font-size: 18px;
+    }
+  }
 }

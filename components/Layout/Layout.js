@@ -16,10 +16,10 @@ export const Layout = ({editHandle ,editMode ,children}) => {
             </div>
             <div className={style.top}>
                 <div className={style.top_bell}>
-                    <NotificationsNoneIcon fontSize={'large'} style={{color: '#FFF'}}/>
+                    <NotificationsNoneIcon className={style.bell} fontSize={'large'} style={{color: '#FFF'}}/>
                 </div>
                 <div className={style.top_avatar}>
-                    <Avatar alt="Person" src={avatar}/>
+                    <Avatar className={style.avatar} alt="Person" src={avatar}/>
                 </div>
                 <div className={style.top_title}>
                     <span>Иванова А.</span>
@@ -30,13 +30,13 @@ export const Layout = ({editHandle ,editMode ,children}) => {
                 <p>{`Главная/Личный профиль`}</p>
             </div>
             <div className={style.profile_info}>
-                <Avatar alt="Person" style={{width: '80px', height: '80px', margin: '24px 42px 24px 34px'}}
+                <Avatar alt="Person" className={style.profile_avatar}
                         src={avatar}/>
                 <span>Иванова Анна Михайловна</span>
                 <div className={style.profile_info_icon} onClick={editHandle}>
-                    <span>{!editMode ? 'РЕДАКТИРОВАТЬ' : 'Закрыть'}</span>
-                    {!editMode ?  <EditIcon style={{color: '#FFFFFF', fontSize: '18px'}}/> :
-                    <CloseIcon style={{color: '#FFFFFF', fontSize: '18px'}} />
+                    <span className={style.profile_info_icon_title}>{!editMode ? 'РЕДАКТИРОВАТЬ' : 'Закрыть'}</span>
+                    {!editMode ?  <EditIcon style={{marginLeft: '5px',color: '#FFFFFF', fontSize: '18px'}}/> :
+                    <CloseIcon style={{marginLeft: '5px',color: '#FFFFFF', fontSize: '18px'}} />
                     }
                 </div>
 

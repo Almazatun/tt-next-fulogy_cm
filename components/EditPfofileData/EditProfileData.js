@@ -54,7 +54,7 @@ export const EditProfileData = () => {
     };
 
     const body = (
-        <div style={modalStyle} className={style.modal_save_data}>
+        <div className={style.modal_save_data}>
             <CloseIcon onClick={onCloseHandle} className={style.btn_close}/>
             <span>Сохранить изменения?</span>
             <div style={{margin: '32px 0 28px 0'}}>
@@ -68,10 +68,10 @@ export const EditProfileData = () => {
         </div>
     );
     const bodySuccess = (
-        <div style={modalStyle} className={style.modal_save_data}>
+        <div className={style.modal_success}>
             <span>Данные успешно сохранены</span>
-            <div style={{margin: '32px 0 28px 0'}}>
-                <Button onClick={onSuccessClose} title={'Хорошо'} backgroundColor={'#00BFA5'} fontColor={'#FFF'}
+            <div className={style.modal_success_box}>
+                <Button className={style.modal_success_btn} onClick={onSuccessClose} title={'Хорошо'} backgroundColor={'#00BFA5'} fontColor={'#FFF'}
                         width={'202px'}/>
             </div>
         </div>
@@ -82,11 +82,11 @@ export const EditProfileData = () => {
         <div className={style.container}>
             <div className={style.box}>
                 <div className={style.name}>
-                    <AssignmentIndIcon fontSize={'large'} style={{margin: "0 45px 0 0", color: '#00BFA5'}}/>
+                    <AssignmentIndIcon className={style.name_icon} fontSize={'large'} />
                     <TextField
                         id="outlined-full-width"
                         label="Фамилия и имя"
-                        style={{margin: 8, width: '254px', fontSize: '14px'}}
+                        className={style.input}
                         placeholder="Укажите ваши фамилию и имя"
                         fullWidth
                         margin="normal"
@@ -97,11 +97,11 @@ export const EditProfileData = () => {
                     />
                 </div>
                 <div className={style.email}>
-                    <AlternateEmailIcon style={{margin: "0 45px 0 0", color: '#00BFA5'}} fontSize={'large'}/>
+                    <AlternateEmailIcon className={style.email_icon} fontSize={'large'}/>
                     <TextField
                         id="outlined-full-width"
                         label="E-mail"
-                        style={{margin: 8, width: '254px', fontSize: '14px'}}
+                        className={style.input}
                         placeholder="Ivanova@mail.ru"
                         fullWidth
                         margin="normal"
@@ -112,11 +112,11 @@ export const EditProfileData = () => {
                     />
                 </div>
                 <div className={style.phoneNumber}>
-                    <PhoneIcon style={{margin: '0 45px 0 0 ', color: '#00BFA5'}} fontSize={'large'}/>
+                    <PhoneIcon className={style.phoneNumber_icon} fontSize={'large'}/>
                     <TextField
                         id="outlined-full-width"
                         label="Номер телефона"
-                        style={{margin: 8, width: '254px', fontSize: '14px'}}
+                        className={style.input}
                         placeholder="Укажите номер телефона"
                         fullWidth
                         margin="normal"
@@ -143,8 +143,7 @@ export const EditProfileData = () => {
             {/*///////////////////////////////////////////////////////////////////////////////////////*/}
             <Modal
                 open={success}
-                onClose={() => {
-                }}
+                onClose={onSuccessClose}
 
             >
                 {bodySuccess}

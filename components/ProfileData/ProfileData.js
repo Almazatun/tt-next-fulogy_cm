@@ -7,14 +7,14 @@ export const ProfileData = () => {
     return (
         <div className={style.container}>
             <div className={style.mail}>
-                <AlternateEmailIcon style={{margin: '0 42px 0 0 ', color: '#00BFA5'}} fontSize={'large'}/>
+                <AlternateEmailIcon className={style.mail_icon}  fontSize={'large'}/>
                 <span>Ivanova@mail.ru</span>
             </div>
             <div className={style.lineHorizontal}>
 
             </div>
             <div className={style.phone}>
-                <PhoneIcon style={{margin: '0 42px 0 0 ', color: '#00BFA5'}} fontSize={'large'} />
+                <PhoneIcon className={style.phone_icon}  fontSize={'large'} />
                 <span>Укажите номер телефона</span>
             </div>
         </div>
