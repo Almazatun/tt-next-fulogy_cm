@@ -1,7 +1,8 @@
+import React, {useState} from "react";
 import {Layout} from "../../components/Layout/Layout";
 import {Profile} from "../../components/Profile/Profile";
-import {useState} from "react";
-import {EditProfile} from "../../components/EditPfofile/EditProfile";
+import {ProfileContainer} from "../../components/Profile/ProfileContainer";
+import {EditProfileContainer} from "../../components/EditPfofile/EditProfileContainer";
 
 export const Main = () => {
 
@@ -13,7 +14,7 @@ export const Main = () => {
 
     return (
             <Layout editHandle={editHandle} editMode={edit}>
-                {!edit ?  <Profile/> : <EditProfile />}
+                {!edit ?  <ProfileContainer /> : <EditProfileContainer />}
             </Layout>
     )
 
