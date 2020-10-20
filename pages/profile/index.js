@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import style from './profile.module.scss'
 import {MainLayout} from "../../components/MainLayout/MainLayout";
 import {Layout} from "../../components/Layout/Layout";
 import {ProfileData} from "../../components/ProfileData/ProfileData";
