@@ -22,6 +22,7 @@
         height: 96px;
         align-items: center;
         display: flex;
+        z-index: 20;
 
         .mail_icon, .phone_icon {
             margin: 0 42px 0 0;

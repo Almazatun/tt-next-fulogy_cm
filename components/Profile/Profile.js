@@ -1,9 +1,9 @@
 import React from 'react'
 import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 import PhoneIcon from '@material-ui/icons/Phone';
-import style from './ProfileData.module.scss'
+import style from './Profile.module.scss'
 
-export const ProfileData = () => {
+export const Profile = () => {
     return (
         <div className={style.container}>
             <div className={style.mail}>

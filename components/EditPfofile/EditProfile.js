@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Button} from "../common/Button/Button";
-import style from './EditProfileData.module.scss'
+import style from './EditProfile.module.scss'
 import TextField from "@material-ui/core/TextField";
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import AlternateEmailIcon from "@material-ui/icons/AlternateEmail";
@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export const EditProfileData = () => {
+export const EditProfile = () => {
 
     const [name, setName] = useState('');
     const [open, setOpen] = useState(false);
