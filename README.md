@@ -1,4 +1,15 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Web version
+![frame20](./public/frames/Frame_20.jpg)
+![frame29](./public/frames/Frame_29.jpg)
+
+
+## Mobile version
+![iphoneSE1](./public/frames/iphone_SE/iPhone_SE_1.png)
+![iphoneSE2](./public/frames/iphone_SE/iPhone_SE_2.png)
+![iphoneSE4](./public/frames/iphone_SE/iPhone_SE_4.png)
+![iphoneSE5](./public/frames/iphone_SE/iPhone_SE_5.png)
+![iphoneSE6](./public/frames/iphone_SE/iPhone_SE_6.png)
 
 ## Getting Started
 
