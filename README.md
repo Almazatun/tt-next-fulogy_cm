@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ![frame29](./public/frames/Frame_29.jpg)
 
 
-## Mobile version
+## Mobile version (iphone SE)
 ![iphoneSE1](./public/frames/SE_1.png)
 ![iphoneSE2](./public/frames/SE_2.png)
 ![iphoneSE4](./public/frames/SE_4.png)
