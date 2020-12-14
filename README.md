@@ -5,11 +5,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 
 ## Mobile version
-![iphoneSE1](./public/frames/iphone_SE/iPhone_SE_1.png)
-![iphoneSE2](./public/frames/iphone_SE/iPhone_SE_2.png)
-![iphoneSE4](./public/frames/iphone_SE/iPhone_SE_4.png)
-![iphoneSE5](./public/frames/iphone_SE/iPhone_SE_5.png)
-![iphoneSE6](./public/frames/iphone_SE/iPhone_SE_6.png)
+![iphoneSE1](./public/frames/SE_1.png)
+![iphoneSE2](./public/frames/SE_2.png)
+![iphoneSE4](./public/frames/SE_4.png)
+![iphoneSE5](./public/frames/SE_5.png)
+![iphoneSE6](./public/frames/SE_6.png)
 
 ## Getting Started
 
